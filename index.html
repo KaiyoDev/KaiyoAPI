@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Free Kaiyo Api">
+    <meta name="author" content="Kaiyo">
+    <meta property="og:image" content="https://i.imgur.com/Gk7MfWJ.png">
+    <title>Kaiyo APIs │ Docs</title>
+    <script src="https://kit.fontawesome.com/5367cb78eb.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://i.imgur.com/Gk7MfWJ.png"/> 
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top" class="dark-mode">
+    <div id="wrapper">
+   
+        <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/docs">
+              <img src="https://i.imgur.com/IAL4pqr.jpg" class="rounded-circle shadow-4" style="width: 50px;" alt="Avatar" />
+                <div class="sidebar-brand-text mx-3">KAIYO API</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/statistic">
+                    <i class="fas fa-fw fa-thermometer-three-quarters"></i>
+                    <span>Statistic</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Features
+            </div>
+
+
+<li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOpenai" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa-solid fa-ghost"></i>
+                    <span>Openai</span>
+                </a>
+                <div id="collapseOpenai" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Openai Features</h6>
+                        <a class="collapse-item" href="api/tools/openai_davinci-003?texts=what is open ai?" target="_blank">Text-Davinci-003</a>
+                        <a class="collapse-item" href="api/tools/openai_davinci-002?texts=what is open ai?" target="_blank">Text-Davinci-002</a>
+
+                        <a class="collapse-item" href="api/tools/openai_image-generation?text=white%20sieamese%20cat" target="_blank">Dall-E</a>
+
+                        <a class="collapse-item" href="api/tools/ai?content=Hi" target="_blank">Free AI</a>
+
+                        <a class="collapse-item" href="api/tools/ai-image?content=cute cat"target="_blank">Free AI-Image</a>
+                        
+                      
+                    </div>
+                </div>
+            </li>
+
+
+
+<li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSimsimi" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa-solid fa-ghost"></i>
+                    <span>SimSimi</span>
+                </a>
+                <div id="collapseSimsimi" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Simsimi Features</h6>
+                        <a class="collapse-item" href="api/sim/get/hi" target="_blank">Simsimi PH</a>
+                        <a class="collapse-item" href="api/simv2/get/hi" target="_blank">SimsimiV2 GET</a>
+                        <a class="collapse-item" href="api/simv2/add/hi&&hello" target="_blank">SimsimiV2 ADD</a>
+
+                        <a class="collapse-item" href="api/sim/simv3?type=ask&ask=hi" target="_blank">SimsimiV3 Ask</a>
+
+                        <a class="collapse-item" href="api/sim/simv3?type=teach&ask=hi&ans=helo" target="_blank">SimsimiV3 Teach</a>
+                      
+                    </div>
+                </div>
+            </li>
+
+          <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMusic" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Lyrics</span>
+                </a>
+                <div id="collapseMusic" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Lyrics Features</h6> 
+                        <a class="collapse-item" href="api/lyrics/lyrics?title=muli" target="_blank">Lyrics</a>
+                        <a class="collapse-item" href="api/lyrics/lyricsv1?title=faded" target="_blank">Lyrics v1</a>
+                        <a class="collapse-item" href="api/lyrics/song?title=muli%20ace" target="_blank">Genius Lyrics</a>
+                        
+                      
+                    </div>
+                </div>
+            </li>
+
+
+
+
+
+
+
+
+
+          
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDownload" aria-expanded="true" aria-controls="collapseBootstrap">
+                    <i class="fa fa-fw fa-arrow-down"></i>
+                    <span>Downloader [ DEAD ]</span>
+                </a>
+                <div id="collapseDownload" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Downloader Features</h6>
+                        <a class="collapse-item" href="api/dowloader/fbdown?url=https://www.facebook.com/UstazAzharIdrusFansClub/videos/813224618838631" target="_blank">Facebook</a>
+                        <a class="collapse-item" href="api/dowloader/twitter?url=https://twitter.com/faqeeyaaz/status/1242789155173617664?s=20&t=DRgdl9U8MwTwpY0o1o-96g" target="_blank">Twitter</a>
+                        <a class="collapse-item" href="api/dowloader/tikok?url=https://vt.tiktok.com/ZSdqSfBxG/?k=1" target="_blank">Tiktok Mp4 Mp3</a>
+                        <a class="collapse-item" href="api/dowloader/igstory?username=aniq_shaaheen" target="_blank">Instagram Story</a>
+                        <a class="collapse-item" href="api/dowloader/igreels?url=https://www.instagram.com/reel/CPKMOwvlfSB/?igshid=YmMyMTA2M2Y=" target="_blank">Instagram Reels</a>
+                        <a class="collapse-item" href="api/dowloader/igdowloader?url=https://www.instagram.com/tv/CeBAd9wAA6G/?igshid=MDJmNzVkMjY=" target="_blank">Instagram Video Picture</a>
+                        <a class="collapse-item" href="api/dowloader/yt?url=https://youtu.be/3hXbjp-FcTc" target="_blank">Youtube Mp4 Mp3</a>
+                        <a class="collapse-item" href="api/dowloader/soundcloud?url=https://soundcloud.com/ndaa-212683099/dj-coba-kau-ingat-ingat-kembali-seharusnya-aku-jungle-dutch-terbaru-2021-full-bass-viral-tik?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">SoundCloud</a>
+                        <a class="collapse-item" href="api/dowloader/telesticker?url=https://t.me/addstickers/Shitsshitsshitsshists" target="_blank">Telegram Sticker</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTextPro" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa fa-fw fa-font"></i>
+                    <span>Text Pro</span>
+                </a>
+                <div id="collapseTextPro" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Text Pro Features</h6>
+                        <a class="collapse-item" href="api/textpro/pencil?text=CHARDSApi" target="_blank">Pencils</a>
+                        <a class="collapse-item" href="api/textpro/glitch?text=CHARDSApi" target="_blank">Glitch</a>
+                        <a class="collapse-item" href="api/textpro/berry?text=CHARDSApi" target="_blank">Berry</a>
+                        <a class="collapse-item" href="api/textpro/blackpink?text=CHARDSApi" target="_blank">Black pink</a>
+                        <a class="collapse-item" href="api/textpro/neon?text=CHARDSApi" target="_blank">Neon</a>
+                        <a class="collapse-item" href="api/textpro/logobear?text=CHARDSApi" target="_blank">Logo Bear</a>
+                        <a class="collapse-item" href="api/textpro/3dchristmas?text=CHARDSApi" target="_blank">3D Christmas</a>
+                        <a class="collapse-item" href="api/textpro/thunder?text=CHARDSApi" target="_blank">Thunder</a>
+                        <a class="collapse-item" href="api/textpro/3dboxtext?text=CHARDSApi" target="_blank">3D Box</a>
+                        <a class="collapse-item" href="api/textpro/glitch2?text=CHARDSApi&text2=pro" target="_blank">Glitch2</a>
+                        <a class="collapse-item" href="api/textpro/glitchtiktok?text=CHARDSApi&text2=pro" target="_blank">Glitch Tiktok</a>
+                        <a class="collapse-item" href="api/textpro/video-game-classic?text=CHARDSApi&text2=pro" target="_blank">Video Game Classic</a>
+                        <a class="collapse-item" href="api/textpro/marvel-studios?text=CHARDSApi&text2=pro" target="_blank">Marvel Studios</a>
+                        <a class="collapse-item" href="api/textpro/ninja-logo?text=CHARDSApi&text2=pro" target="_blank">Ninja Logo</a>
+                        <a class="collapse-item" href="api/textpro/transformer?text=CHARDSApi" target="_blank">Transformer</a>
+                        <a class="collapse-item" href="api/textpro/green-horror?text=CHARDSApi" target="_blank">Green Horrorer</a>
+                        <a class="collapse-item" href="api/textpro/magma?text=CHARDSApi" target="_blank">Magma</a>
+                        <a class="collapse-item" href="api/textpro/3d-neon-light?text=CHARDSApi" target="_blank">3d Neon Light</a>
+                        <a class="collapse-item" href="api/textpro/3d-orange-juice?text=CHARDSApi" target="_blank">3d Orange Juice</a>
+                        <a class="collapse-item" href="api/textpro/chocolate-cake?text=CHARDSApi" target="_blank">Chocolate Cake</a>
+                        <a class="collapse-item" href="api/textpro/strawberry?text=CHARDSApi" target="_blank">Strawberry</a>
+                        <a class="collapse-item" href="api/textpro/circuit?text=CHARDSApi" target="_blank">Circuit</a>
+                        <a class="collapse-item" href="api/textpro/graffiti1?text=CHARDSApi" target="_blank">Graffiti 1</a>
+                        <a class="collapse-item" href="api/textpro/graffiti2?text1=CHARDSApi&text2=ChardsApi" target="_blank">Graffiti 2</a>
+                        <a class="collapse-item" href="api/textpro/graffiti3?text1=CHARDSApi&text2=ChardsApi" target="_blank">Graffiti 3</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePhotooxy" aria-expanded="true" aria-controls="collapseForm">
+                    <i class="fa fa-fw fa-font"></i>
+                    <span>Photooxy</span>
+                </a>
+                <div id="collapsePhotooxy" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Photooxy Features</h6>
+                        <a class="collapse-item" href="api/photooxy/flaming?text=CHARDSApi" target="_blank">Flaming</a>
+                        <a class="collapse-item" href="api/photooxy/shadow-sky?text=CHARDSApi" target="_blank">Shadow Sky</a>
+                        <a class="collapse-item" href="api/photooxy/metallic?text=CHARDSApi" target="_blank">Metallic</a>
+                        <a class="collapse-item" href="api/photooxy/naruto?text=CHARDSApi" target="_blank">Naruto</a>
+                        <a class="collapse-item" href="api/photooxy/pubg?text=Pubg&text2=CHARDSApi" target="_blank">PUBG</a>
+                        <a class="collapse-item" href="api/photooxy/under-grass?text=CHARDSApi" target="_blank">Under Grass</a>
+                        <a class="collapse-item" href="api/photooxy/harry-potter?text=CHARDSApi" target="_blank">Harry Potter</a>
+                        <a class="collapse-item" href="api/photooxy/flower-typography?text=CHARDSApi" target="_blank">Flower Typography</a>
+                        <a class="collapse-item" href="api/photooxy/picture-of-love?text=CHARDSApi" target="_blank">Picture Of Love</a>
+                        <a class="collapse-item" href="api/photooxy/coffee-cup?text=CHARDSApi" target="_blank">Coffee Cup</a>
+                        <a class="collapse-item" href="api/photooxy/butterfly?text=CHARDSApi" target="_blank">Butterfly</a>
+                        <a class="collapse-item" href="api/photooxy/night-sky?text=CHARDSApi" target="_blank">Night Sky</a>
+                        <a class="collapse-item" href="api/photooxy/carved-wood?text=CHARDSApi" target="_blank">Carved Wood</a>
+                        <a class="collapse-item" href="api/photooxy/illuminated-metallic?text=CHARDSApi" target="_blank">Illuminated Metallic</a>
+                        <a class="collapse-item" href="api/photooxy/sweet-candy?text=CHARDSApi" target="_blank">Sweet Candy</a>
+                    </div>
+                </div>
+            </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandomText" aria-expanded="true" aria-controls="collapseTable">
+                        <i class="fa fa-fw fa-music"></i>
+                        <span>Sound Of Text</span>
+                    </a>
+                    <div id="collapseRandomText" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                        <div class="py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Bahasa</h6>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=id-ID">Indonesian</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=en-US">English (United States)</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=ja-JP">Japanese (Japan)</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=fr-FR">French</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=fil-PH">Filipino</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=my">Burmese (Myanmar)</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=de-DE">German</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=it-IT">	Italian</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=jko-KR">Korean</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=th-TH">Thai</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=hi-IN">Hindi</a>
+                            <a class="collapse-item" target="_blank" href="api/soundoftext?text=hi&lang=ru-RU">Russian</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseserch" aria-expanded="true" aria-controls="collapseTable">
+                        <i class="fa fa-fw fa-search"></i>
+                        <span>Search</span>
+                    </a>
+                    <div id="collapseserch" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                        <div class="py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Search Features</h6>
+                            <a class="collapse-item" href="api/search/ytplay?text=lagu%dj" target="_blank">Yt Play</a>
+                            <a class="collapse-item" href="api/search/linkgroupwa?text=belajar" target="_blank">Group WA</a>
+                            <a class="collapse-item" href="api/search/pinterest?text=al-quran" target="_blank">Pinterest</a>
+                            <a class="collapse-item" href="api/search/ringtone?text=samsung" target="_blank">Ringtone</a>
+                            <a class="collapse-item" href="api/search/wikimedia?text=Malaysia" target="_blank">Wikimedia</a>
+                            <a class="collapse-item" href="api/search/google?text=Mobile%20Legends" target="_blank">Google</a>
+                            <a class="collapse-item" href="api/search/googleimage?text=Mobile%20Legends" target="_blank">Google Image</a>
+                            <a class="collapse-item" href="api/search/wallpaper?text=Mobile%20Legends" target="_blank">Wallpaper</a>
+                            <a class="collapse-item" href="api/search/sticker?text=fun" target="_blank">Sticker</a>
+
+                        </div>
+                    </div>
+                </li>
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapserandomimage" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-random"></i>
+                    <span>Random Gambar</span>
+                </a>
+                <div id="collapserandomimage" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Random Gambar Features</h6>
+                        <a class="collapse-item" href="api/randomgambar/couplepp" target="_blank">Couple pp</a>
+                        <a class="collapse-item" href="api/randomgambar/dadu" target="_blank">Dadu</a>
+                        <a class="collapse-item" href="api/randomgambar/coffee" target="_blank">Coffee</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsegame" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-gamepad"></i>
+                    <span>Game</span>
+                </a>
+                <div id="collapsegame" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Game Features</h6>
+            <a class="collapse-item" target="_blank" href="api/game/tembakgambar">Tembak Gambar</a>
+            <a class="collapse-item" target="_blank" href="api/game/susunkata">Susun Kata</a>
+            <a class="collapse-item" target="_blank" href="api/game/tembakbendera">Tembak Bendera</a>
+            <a class="collapse-item" target="_blank" href="api/game/tembakgame">Tembak Game</a>
+            <a class="collapse-item" target="_blank" href="api/game/tembakkata">Tembak Kata</a>
+            <a class="collapse-item" target="_blank" href="api/game/tembaklirik">Tembak Lirik</a>
+            <a class="collapse-item" target="_blank" href="api/game/tembaklagu">Tembak Lagu</a>
+            <a class="collapse-item" target="_blank" href="api/game/tembakkimia">Tembak Kimia</a>
+            </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMaker" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-paint-brush"></i>
+                    <span>Canvas</span>
+                </a>
+                <div id="collapseMaker" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Image Manipulation</h6>
+                        <a class="collapse-item" target="_blank" href="maker?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Circle</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/beautiful?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Beautiful</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/blur?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Blur</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/darkness?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg&no=50">Darkness</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/facepalm?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Facepalm</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/invert?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Invert</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/pixelate?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg&no=10">Pixelate</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/rainbow?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Rainbow</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/resize?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg&width=100&height=100">Resize</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/trigger?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Trigger</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/wanted?url=https://i.pinimg.com/564x/b8/a8/e2/b8a8e281f1a3113630671742b5677c15.jpg">Wanted</a>
+
+
+                        <h6 class="collapse-header">Maker Other</h6>
+                        <a class="collapse-item" target="_blank" href="api/maker/attp?text=CHARDSApi">ATTP</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/ttp?text=CHARDSApi">TTP</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/emojimix?emoji1=😂&emoji2=🤢">Emojimix</a>          
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/welcome?pp=https://telegra.ph/file/88d818ebbc371788ed0be.jpg&nama=chard&bg=https://telegra.ph/file/3f4993d39b9994c54da94.jpg&namagc=bot+whatsapp&member=150">Welcome</a>
+                      
+                        <a class="collapse-item" target="_blank" href="api/maker/welcome1?name=CHARDSApi&gpname=RestApiCHARDSApi&member=1&pp=https://telegra.ph/file/fc707b30c93233492ea79.png&bg=https://telegra.ph/file/fea867e29574ad52c3660.jpg">Welcome1</a>
+                        <a class="collapse-item" target="_blank" href="api/maker/goodbye1?name=CHARDSApi&gpname=RestApiCHARDSApi&member=1&pp=https://telegra.ph/file/fc707b30c93233492ea79.png&bg=https://telegra.ph/file/fea867e29574ad52c3660.jpg">GoodBye1</a>
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/goodbye?pp=https://telegra.ph/file/88d818ebbc371788ed0be.jpg&nama=chard&bg=https://telegra.ph/file/3f4993d39b9994c54da94.jpg&member=149">GoodBye</a>
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/promote?pp=https://telegra.ph/file/88d818ebbc371788ed0be.jpg&nama=Chardr&namagc=SUCCESS&ppgc=https://telegra.ph/file/3f4993d39b9994c54da94.jpg&bg=https://telegra.ph/file/3f4993d39b9994c54da94.jpg&member=151">Promote</a>
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/level?pp=https://telegra.ph/file/88d818ebbc371788ed0be.jpg&nama=chard&bg=https://telegra.ph/file/3f4993d39b9994c54da94.jpg&needxp=5000&currxp=6000&level=21&logorank=https://telegra.ph/file/88d818ebbc371788ed0be.jpg">Level</a>
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/levelup?pp=https://telegra.ph/file/88d818ebbc371788ed0be.jpg">Level up</a>
+                      
+                        <a class="collapse-item" target="_blank" href="api/canvas/avatarwibu?id=100&bgname=Chard&sig=Chards_Bot">Avtwibu</a>
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/fbcover1?name=CHARDS&id=1&subname=CHARD">Fbcover1</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/fbcover2?name=chards%20bot&uid=100039697834743&address=911chardsbot&email=chardsbot@gmail.com&subname=Chards&sdt=09123456789&color=white">Fbcover2</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/fbcover3?name=Chard Bot&birthday=12/18/2002&love=ChardsBpt&location=BotComs&hometown=Bot_Community&follow=9999999&gender=Male&uid=100069416749591">Fbcover3</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/gfx1?teks=chard">GFX1</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/gfx2?teks=chard">GFX2</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/gfx3?teks1=chards&teks2=bot">GFX3</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/gfx4?teks1=chards&teks2=bot">GFX4</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/gfx5?teks=chard">GFX5</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/customgfx1?teks=chards&bg=https://telegra.ph/file/88d818ebbc371788ed0be.jpg">C-GFX1</a>
+                        <a class="collapse-item" target="_blank" href="api/canvas/customgfx2?teks1=chards&teks2=bot&bg=https://telegra.ph/file/88d818ebbc371788ed0be.jpg">C-GFX2</a>
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/gura?teks=chards">Gura</a>
+
+                        <a class="collapse-item" target="_blank" href="api/canvas/patrick?image=https://telegra.ph/file/88d818ebbc371788ed0be.jpg">Patrick</a>
+                      
+            </div>
+                </div>
+            </li>
+
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapselink" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-link"></i>
+                    <span>Link Short</span>
+                </a>     
+                <div id="collapselink" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Link Short</h6>
+                        <a class="collapse-item" target="_blank" href="api/linkshort/tinyurl?link=http://grrateam.xyz">Tinyurl</a>
+                        <a class="collapse-item" target="_blank" href="api/linkshort/tinyurlwithalias?link=http://grrateam.xyz&alias=grra">Tinyurl With Alias</a>
+                        <a class="collapse-item" target="_blank" href="api/linkshort/cuttly?link=http://grrateam.xyz">Cuttly</a>
+                        <a class="collapse-item" target="_blank" href="api/linkshort/bitly?link=http://grrateam.xyz">Bitly</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePrimbon" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fab fa-fw fa-acquisitions-incorporated"></i>
+                    <span>Information</span>
+                </a>
+                <div id="collapsePrimbon" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Information Features</h6>
+            <a class="collapse-item" target="_blank" href="api/info/githubstalk?user=CHARDSApi">Github Stalk</a>
+            <a class="collapse-item" target="_blank" href="api/info/waktuksolatmy">Waktuk Solat MY</a>
+            <a class="collapse-item" target="_blank" href="api/info/translate?text=Thank%20YOU%20Use%20REST%20ALIP%20API&lang=ms">Translate</a>
+
+            </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseremoji" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                    <span>Emoji</span>
+                </a>
+                <div id="collapseremoji" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Emoji Gambar Features</h6>
+                        <a class="collapse-item" href="api/emoji/apple?emoji=🗿" target="_blank">Apple Emoji</a>
+                        <a class="collapse-item" href="api/emoji/google?emoji=🗿" target="_blank">Google Emoji</a>
+                        <a class="collapse-item" href="api/emoji/samsung?emoji=🗿" target="_blank">Samsung Emoji</a>
+                        <a class="collapse-item" href="api/emoji/microsoft?emoji=🗿" target="_blank">Microsoft Emoji</a>
+                        <a class="collapse-item" href="api/emoji/whatsapp?emoji=🗿" target="_blank">WhatsApp Emoji</a>
+                        <a class="collapse-item" href="api/emoji/twitter?emoji=🗿" target="_blank">Twitter Emoji</a>
+                        <a class="collapse-item" href="api/emoji/facebook?emoji=🗿" target="_blank">Facebook Emoji</a>
+                        <a class="collapse-item" href="api/emoji/skype?emoji=🗿" target="_blank">Skype Emoji</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTools" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <span>Tools</span>
+                </a>
+                <div id="collapseTools" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Tools Features</h6>
+            <a class="collapse-item" target="_blank" href="api/tools/fuid?link=https://facebook.com/zuck">Fuid</a>
+            <a class="collapse-item" target="_blank" href="api/tools/ebase64?text=Rest%20Api%20By%20CHARDSApi">Ebase</a>
+            <a class="collapse-item" target="_blank" href="api/tools/debase64?text=UmVzdCBBcGkgQnkgQWxpcA==">Debase</a>
+            <a class="collapse-item" target="_blank" href="api/tools/ebinary?text=RestApiByCHARDSApi">Ebinary</a>
+            <a class="collapse-item" target="_blank" href="api/tools/debinary?text=01010010%2001100101%2001110011%2001110100%2001000001%2001110000%2001101001%2001000010%2001111001%2001000001%2001101100%2001101001%2001110000">Debinary</a>
+            <a class="collapse-item" target="_blank" href="api/tools/ssweb?link=http://grrateam.xyz">SSWEB</a>
+            <a class="collapse-item" target="_blank" href="api/tools/styletext?text=CHARDSApi">Styletext</a>
+
+            <a class="collapse-item" target="_blank" href="api/tools/uptimerobot/create?url=https://chards-bot-api.richardretada.repl.co">Uptime</a>
+
+
+            </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseIslamic" aria-expanded="true" aria-controls="collapseTable">
+                    <i class="fab fa-fw fa-acquisitions-incorporated"></i>
+                    <span>Religions</span>
+                </a>
+                <div id="collapseIslamic" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Beliefs</h6>
+                      
+                      <a class="collapse-item" target="_blank" href="api/religion/bible">Bible</a>
+                      
+                        <a class="collapse-item" target="_blank" href="api/islamic/surah?no=1">Search Surah</a>                  
+                        <a class="collapse-item" target="_blank" href="api/islamic/tafsirsurah?text=adam">Tafsir Surah</a>                  
+
+                      </div>
+                </div>
+                </li>
+
+            <hr class="sidebar-divider">
+          <!--
+            <div class="sidebar-heading">
+                Contact
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="https://wa.me/6281944943224">
+                    <i class="fab fa-fw fa-whatsapp">Whatsapp</i>
+                    <span></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://instagram.com/gilangrajara_">
+                    <i class="fab fa-fw fa-instagram">Instagram</i>
+                    <span></span>
+                </a>
+            </li>
+          -->
+            <hr class="sidebar-divider">
+        </ul>
+ 
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+              
+                <nav class="navbar navbar-expand navbar-light bg-navbar topbar mb-4 static-top">
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="https://i.imgur.com/IAL4pqr.jpg" class="rounded-circle shadow-4" style="width: 50px;" alt="Avatar" />
+                                <span class="ml-2 d-none d-lg-inline small font-weight-bold">Kaiyo API</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="container-fluid" id="container-wrapper">
+                    <div class="card h-50 mb-4">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col mr-2">
+                                    <div class="text-md-left font-weight-bold mb-2 text-primary">Welcome to Kaiyo API!</div>
+                                    <div class="text-sm-left mb-0 font-weight-bold">Kaiyo API Bot Free By Dang Hoang An🌐
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-quote-right fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="visitor">0</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-eye fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Battery</div>
+                                            <span id="battery_level" class="h5 mb-0 font-weight-bold">Waiting... </span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa fa-battery-full" ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                         <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Road To</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="jadwaltime">Waiting... </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card h-50">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Time</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="row-no-guttersalign-items-center">00:00:00</div>
+                                            <div class="h5 mb-0 font-weight-bold" id="text-xsfont-weight-boldtext-uppercase-mb-1">Selamat Pagi</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-primary"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="findipurl"> <a href="find-ip.net" ></a></div>
+
+                <script defer src="https://api.find-ip.net/widget.js?width=220&bg=%23152232&border=%230e1824&textcol=%23d3d5f3&language=0&system=0&"></script>
+
+
+                  
+                    <div class="Box mt-4">
+                        <div class="Box-body p-4">
+                          <div class="d-flex flex-justify-between">
+                            <div class="text-mono text-small mb-3">
+                            </div>
+                          </div>
+                         
+                  
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            Contact Me
+                            <p>
+                                <a href="https://www.facebook.com/dhannn.06" class="btn btn-primary btn-sm mr-2" target="_blank"><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a>
+                                <a href="https://t.me/sadboydev06" class="btn btn-primary btn-sm ml-2" target="_blank"><i class="fa-solid fa-paperclip"></i>&nbsp;Telegram</a>
+                            </p>
+                        </div>
+                    </div>
+                          
+                </div>
+                
+            </div>
+             
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        Made with <i class="fa fa-heart"></i> by
+                        <a href=https://www.facebook.com/dhannn.06 target="_blank" style="color: rgb(255, 234, 0);">Kaiyo</a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
+       
+        </div>
+    </div>
+
+    
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+          
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/ruang-admin.min.js"></script>
+    <script src="js/menu.js"></script>
+    
+
+</body>
+
+</html>
