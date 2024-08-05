@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gb2312">
+    <title>Hacked By &lt;Kaiyo/&gt;</title>
+    <meta content='Hacked By Kaiyo' name='description'/>
+    <meta content='Hacked By &lt;Kaiyo/&gt;, Hacked by Kaiyo' name='keywords'/>
+    <link rel="icon" href="https://i.imgur.com/kZV2XH3.jpeg">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font: 16px/1.4 Lato, sans-serif;
+            color: #fefeff;
+            -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+            font-family: Comic Sans MS;
+        }
+
+        body {
+            background: #080510;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        h1 {
+            font: 2.75em Cinzel, serif;
+            font-weight: 400;
+            letter-spacing: .35em;
+            text-shadow: 0 0 25px rgba(254, 254, 255, .85);
+        }
+
+        h2 {
+            font: 1.45em Cinzel, serif;
+            font-weight: 400;
+            letter-spacing: .5em;
+            text-shadow: 0 0 25px rgba(254, 254, 255, .85);
+            text-transform: lowercase;
+        }
+
+        [class^=letter] {
+            -webkit-transition: opacity 3s ease;
+            -moz-transition: opacity 3s ease;
+            transition: opacity 3s ease;
+        }
+
+        .letter-0 {
+            transition-delay: .2s;
+        }
+
+        .letter-1 {
+            transition-delay: .4s;
+        }
+
+        .letter-2 {
+            transition-delay: .6s;
+        }
+
+        .letter-3 {
+            transition-delay: .8s;
+        }
+
+        .letter-4 {
+            transition-delay: 1s;
+        }
+
+        .letter-5 {
+            transition-delay: 1.2s;
+        }
+
+        .letter-6 {
+            transition-delay: 1.4s;
+        }
+
+        .letter-7 {
+            transition-delay: 1.6s;
+        }
+
+        .letter-8 {
+            transition-delay: 1.8s;
+        }
+
+        .letter-9 {
+            transition-delay: 2s;
+        }
+
+        .letter-10 {
+            transition-delay: 2.2s;
+        }
+
+        .letter-11 {
+            transition-delay: 2.4s;
+        }
+
+        .letter-12 {
+            transition-delay: 2.6s;
+        }
+
+        .letter-13 {
+            transition-delay: 2.8s;
+        }
+
+        .letter-14 {
+            transition-delay: 3s;
+        }
+
+        h1, h2 {
+            visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+
+        h1.transition-in, h2.transition-in {
+            visibility: visible;
+        }
+
+        h1 [class^=letter], h2 [class^=letter] {
+            opacity: 0;
+        }
+
+        h1.transition-in [class^=letter], h2.transition-in [class^=letter] {
+            opacity: 1;
+        }
+
+        #container {
+            display: table;
+            position: absolute;
+            z-index: 20;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            cursor: none;
+        }
+
+        #container > div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #container p {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 25px;
+            font-size: .8em;
+            letter-spacing: .1em;
+            font-weight: 300;
+            color: #76747a;
+            -webkit-font-smoothing: subpixel-antialiased;
+            font-smoothing: subpixel-antialiased;
+        }
+
+        #container p strong {
+            color: #b3abc5;
+        }
+
+        #container p span {
+            font-size: .75em;
+            padding: 0 2px;
+        }
+
+        #canvas {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: none;
+        }
+
+        #stats {
+            position: absolute;
+            z-index: 10;
+            left: 10px;
+            top: 10px;
+        }
+
+        .dg.ac {
+            z-index: 100 !important;
+        }
+
+        .STYLE4 {
+            color: #FFF
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div><br><br><br><br>
+            <center>
+                <script>
+                    var isCtrl = false;
+                    document.onkeyup = function(e) {
+                        if (e.which == 17) isCtrl = false;
+                    }
+                    document.onkeydown = function(e) {
+                        if (e.which == 17) isCtrl = true;
+                        if ((e.which == 85) || (e.which == 67) && isCtrl == true) {
+                            return false;
+                        }
+                    }
+
+                    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+                    if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+                    function mischandler() {
+                        return false;
+                    }
+
+                    function mousehandler(e) {
+                        var myevent = (isNS) ? e : event;
+                        var eventbutton = (isNS) ? myevent.which : myevent.button;
+                        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+                    }
+
+                    document.oncontextmenu = mischandler;
+                    document.onmousedown = mousehandler;
+                    document.onmouseup = mousehandler;
+                </script>
+                <SCRIPT>
+                    farbbibliothek = new Array();
+                    farbbibliothek[0] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+                    farbbibliothek[1] = new Array("#00FF00", "#000000", "#00FF00", "#00FF00");
+                    farbbibliothek[2] = new Array("#00FF00", "#FF0000", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00", "#00FF00");
+                    farbbibliothek[3] = new Array("#FF0000", "#FF4000", "#FF8000", "#FFC000", "#FFFF00", "#C0FF00", "#80FF00", "#40FF00", "#00FF00", "#00FF40", "#00FF80", "#00FFC0", "#00FFFF", "#00C0FF", "#0080FF", "#0040FF", "#0000FF", "#4000FF", "#8000FF", "#C000FF", "#FF00FF", "#FF00C0", "#FF0080", "#FF0040");
+                    farbbibliothek[4] = new Array("#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000", "#990000", "#880000", "#770000", "#660000", "#550000", "#440000", "#330000", "#220000", "#110000", "#000000", "#FF0000");
+                    farbbibliothek[5] = new Array("#FF0000", "#FF0000", "#FF0000", "#FFFFFF", "#FFFFFF", "#FFFFFF");
+                    farbbibliothek[6] = new Array("#FF0000", "#FF0000", "#FF0000", "#FFFFFF", "#FFFFFF", "#FFFFFF");
+                    farbbibliothek[7] = new Array("#FF0000", "#FF1100", "#FF2200", "#FF3300", "#FF4400", "#FF5500", "#FF6600", "#FF7700", "#FF8800", "#FF9900", "#FFaa00", "#FFbb00", "#FFcc00", "#FFdd00", "#FFee00", "#FFff00", "#FFee00", "#FFdd00", "#FFcc00", "#FFbb00", "#FFaa00", "#FF9900", "#FF8800", "#FF7700", "#FF6600", "#FF5500", "#FF4400", "#FF3300", "#FF2200", "#FF1100");
+
+                    function farbschrift() {
+                        for (var b = 0; b < A.length; b++) {
+                            document.all["a" + b].style.color = A[b];
+                        }
+                        farbverlauf();
+                    }
+
+                    function string2array(b) {
+                        B = new Array();
+                        for (var a = 0; a < b.length; a++) {
+                            B[a] = b.charAt(a);
+                        }
+                        return B;
+                    }
+
+                    function divserzeugen() {
+                        for (var c = 0; c < B.length; c++) {
+                            document.write("<span id='a" + c + "' class='STYLE4'>" + B[c] + "</span>");
+                        }
+                    }
+
+                    var A = new Array();
+                    var B = new Array();
+                    var C = new Array();
+                    var D = 0;
+                    var Farbverlaufgeschwindigkeit = 1;
+                    var a;
+                    var farbsatz = 0;
+                    function farbverlauf() {
+                        for (var a = 0; a < A.length; a++) {
+                            A[a] = farbbibliothek[farbsatz][C[a]];
+                        }
+                        for (var a = 0; a < C.length; a++) {
+                            C[a] = C[a] + 1;
+                        }
+                        if (C[0] == farbbibliothek[farbsatz].length) {
+                            for (var a = 0; a < C.length; a++) {
+                                C[a] = 0;
+                            }
+                        }
+                    }
+                    function farbtauscher() {
+                        C = new Array();
+                        for (var b = 0; b < A.length; b++) {
+                            C[b] = b;
+                        }
+                        for (var d = 0; d < C.length; d++) {
+                            C[d] = Math.floor(Math.random() * farbbibliothek[farbsatz].length);
+                        }
+                    }
+                    farbschrift();
+                    setInterval(farbschrift, 250);
+                    A = string2array("Hacked by Kaiyo");
+                    farbtauscher();
+                    divserzeugen();
+                </SCRIPT>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
